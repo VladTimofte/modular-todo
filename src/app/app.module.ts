@@ -5,6 +5,7 @@ import { BrowserModule } from "@angular/platform-browser";
 import { AddTaskComponent } from "./components/add-task/add-task.component";
 import { TaskListComponent } from "./components/task-list/task-list.component";
 import { CommonModule } from "@angular/common";
+import { FormsModule } from "@angular/forms";
 
 @NgModule({
     declarations: [
@@ -13,7 +14,7 @@ import { CommonModule } from "@angular/common";
         TaskListComponent
     ],
     bootstrap: [AppComponent],
-    imports: [RouterOutlet, BrowserModule, CommonModule]
+    imports: [RouterOutlet, BrowserModule, CommonModule, FormsModule]
 })
 
 export class AppModule {}

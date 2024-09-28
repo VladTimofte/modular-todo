@@ -6,5 +6,9 @@ import { Component } from '@angular/core';
   styleUrl: './app.component.css'
 })
 export class AppComponent {
-  parentTasks = ['Sa merg la shopping', 'Sa merg la doctor', 'Sa ma uit la meci']
+  parentTasks: string[] = []
+
+  addTaskParent(newTask: string) {
+    this.parentTasks.push(newTask)
+  }
 }

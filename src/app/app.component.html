@@ -1,5 +1,5 @@
 <div class="container">
   <h1>To-do List</h1>
-  <app-add-task></app-add-task>
+  <app-add-task (taskAdded)="addTaskParent($event)"></app-add-task>
   <app-task-list [childTasks]="parentTasks"></app-task-list>
 </div>
